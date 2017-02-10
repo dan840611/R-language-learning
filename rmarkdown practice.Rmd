@@ -1,0 +1,23 @@
+---
+title: "test"
+author: "Dan"
+date: "2017/2/10"
+output: html_document
+---
+
+This is my first time
+
+```{r}
+library(datasets)
+data(airquality)
+summary(airquality)
+```
+
+```{r}
+pairs(airquality)
+```
+
+```{r}
+data <- lm(Ozone ~ Temp + Solar.R ,data=airquality)
+summary(data)
+```
